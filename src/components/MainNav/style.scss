@@ -1,0 +1,55 @@
+@import "./../../scss/common";
+
+.main-nav {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 15px;
+  & > .nav-list {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+
+    & > .item {
+      display: inline-block;
+
+      & > a {
+        display: block;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 35px;
+  position: relative;
+
+  & > .bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 10px;
+    }
+    &:nth-child(2) {
+      top: calc(50% - 2.5px);
+    }
+    &:nth-child(3) {
+      bottom: 10px;
+    }
+  }
+
+  &:active {
+    & > .bar {
+    }
+  }
+}

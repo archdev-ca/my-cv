@@ -2,7 +2,7 @@ import * as React from "react";
 import Section from "./../../components/Section";
 import "./style.scss";
 
-const Home = () => {
+const Education = () => {
   return (
     <div>
       <Section title="Summary"></Section>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Education;

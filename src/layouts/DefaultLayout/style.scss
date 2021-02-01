@@ -1,0 +1,8 @@
+.layout {
+  background-color: #ccc;
+  min-height: 100vh;
+
+  & > .container {
+    overflow: hidden;
+  }
+}
