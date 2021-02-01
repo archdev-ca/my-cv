@@ -2,13 +2,15 @@ import * as React from "react";
 import "./style.scss";
 
 type SectionProps = {
-  title: string;
+  title?: string;
+  children?: React.ReactNode;
 };
 
-const Section = ({ title }: SectionProps) => {
+const Section = ({ children, title }: SectionProps) => {
   return (
     <section className="section-block">
-      <h2 className="title">{title}</h2>
+      {!!title && <h2 className="title">{title}</h2>}
+      <div className="body">{children}</div>
     </section>
   );
 };
