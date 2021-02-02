@@ -8,8 +8,10 @@ const Home = () => {
     <div>
       <Section>
         <Row>
-          <Col span={1}>
-            <img src="/images/dp.jpg" alt="" />
+          <Col span={2}>
+            <div className="dp-frame">
+              <img className="dp" src="/images/dp.jpg" alt="" />
+            </div>
           </Col>
           <Col>
             <p>Archibal de la Cruz Gelonga</p>
