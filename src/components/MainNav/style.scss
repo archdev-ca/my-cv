@@ -16,7 +16,17 @@
 
       & > a {
         display: block;
-        padding: 15px;
+        border-radius: 3px;
+        padding: 5px 15px;
+        margin: 10px 2px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        &:hover {
+          background-color: #fff;
+          color: $color-primary;
+        }
       }
     }
   }
@@ -28,23 +38,24 @@
   outline: none;
   width: 35px;
   position: relative;
+  cursor: pointer;
 
   & > .bar {
     display: block;
     width: 35px;
-    height: 5px;
+    height: 4px;
     border-radius: 2px;
     background-color: #fff;
     position: absolute;
 
     &:nth-child(1) {
-      top: 10px;
+      top: 12px;
     }
     &:nth-child(2) {
-      top: calc(50% - 2.5px);
+      top: calc(50% - 2px);
     }
     &:nth-child(3) {
-      bottom: 10px;
+      bottom: 12px;
     }
   }
 
